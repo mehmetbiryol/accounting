@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.all-screen {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.menu-screen {
+  background-color: #0C2C52;
+  height: 100vh;
+  width: 318px;
+  transition: 0.3s ease-in-out;
+
+}
+
+.navbar-close {
+  width: 37px;
+  overflow: hidden;
+  padding: 0;
+}
+
+#menu-open-btn {
+  display: none;
+}
+
+#app-screen {
+  min-height: 100vh;
+  height: auto;
+  transition: 0.3s ease-in-out;
+  width: calc(100% - 318px);
+}
+
+.accordion {
+  --bs-accordion-bg: transparent;
+  --bs-accordion-btn-color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  background-color: #DCF0F7;
+  border: none;
+  padding: 2px;
+}
+
+.accordion-button {
+  box-shadow: none;
+}
+
+.cari-tanim-table-body tr,
+.cari-hareket-table-body tr,
+.stok-tanim-table-body tr,
+.stok-hareket-table-body tr,
+.kasa-tanim-table-body tr,
+.kasa-hareket-table-body tr {
+  cursor: pointer;
+}
+
+.cari-tanim-autokod-btn,
+.cari-hareket-autokod-btn,
+.stok-tanim-autokod-btn,
+.stok-hareket-autokod-btn,
+.kasa-tanim-autokod-btn,
+.kasa-hareket-autokod-btn,
+.fatura-autokod-btn,
+.makbuz-autokod-btn {
+  position: absolute;
+  right: 0;
+  transform: translateX(105%);
+  height: 24px;
+  padding: 0px 4px 3px 4px;
+}
+
+sup {
+  color: red;
+}
+
+thead th {
+  cursor: pointer;
+}
+
+thead th:hover {
+  box-shadow: 0 0 0 20px inset rgba(0, 0, 0, 0.05);
+}
+
+[data-sort-order="asc"]::after {
+  content: '\25B2';
+}
+
+[data-sort-order="desc"]::after {
+  content: '\25BC';
+}
+
+
+.fatura-kalem-ekle-screen th {
+  cursor: default;
+}
+
+#fatura-ara-toplam-input,
+#fatura-toplam-input,
+#fatura-genel-toplam-input {
+  width: 39%;
+}
+
+.double-input {
+  width: 42.7%;
+}
+
+.fatura-kalem-stok-kod-input {
+  width: 100px;
+}
+
+.fatura-kalem-miktar-input {
+  width: 50px;
+  text-align: right;
+}
+
+.fatura-kalem-birim-input {
+  width: 100px;
+}
+
+.fatura-kalem-fiyat-input {
+  width: 100px;
+  text-align: right;
+}
+
+.fatura-kalem-tutar-input {
+  width: 150px;
+  text-align: right;
+}
+
+.cari-hareket-screen thead th:nth-child(n + 8) {
+  text-align: center;
+}
+
+.cari-hareket-table-body td:nth-child(n + 8) {
+  text-align: right;
+}
+
+#fatura-toplam-input,
+#fatura-iskonto-oran-input,
+#fatura-iskonto-tutar-input,
+#fatura-ara-toplam-input,
+#fatura-kdv-input,
+#fatura-kdv-tutar-input,
+#fatura-genel-toplam-input {
+  text-align: right;
+}
+
+.accordion-body .btn {
+  display: block;
+}
