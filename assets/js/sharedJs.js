@@ -197,7 +197,7 @@ const loadData = () => {
       {
         id: 1,
         kod: "S-0001",
-        ad: "AK-47",
+        ad: "Ürün 1",
         fiyat: 100,
         kdv: 8,
         birim: "adet",
@@ -206,7 +206,7 @@ const loadData = () => {
       {
         id: 2,
         kod: "S-0002",
-        ad: "7.62x39mm Ammo",
+        ad: "Ürün 2",
         fiyat: 150,
         kdv: 18.25,
         birim: "kutu",
